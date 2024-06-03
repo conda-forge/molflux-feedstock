@@ -1,5 +1,5 @@
 {% set name = "molflux" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/molflux-{{ version }}.tar.gz
-  sha256: af82325c8c49b1983aadac59d42dcacee921ec7c7f69bbe276a85404b43718c3
+  sha256: f7ec309350da8ee9d060363de695f5cd1315a0e8caee1b37f9c96c1d42f11089
 
 build:
   noarch: python
