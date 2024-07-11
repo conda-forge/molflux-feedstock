@@ -47,6 +47,7 @@ requirements:
     - thefuzz
     - tqdm
     - typing-extensions
+    - urllib3 <2.1,>=1.25.4
 
 test:
   imports:
