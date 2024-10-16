@@ -1,5 +1,5 @@
 {% set name = "molflux" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/molflux-{{ version }}.tar.gz
-  sha256: 49f497037f9a97e98a1e6bfc8685f96d5f3d13f2e8eeb1dcfc802337388cf946
+  sha256: 54edae23fbb8f7ee2c19ed6f4197ad2e54df96c126a9072aa8e64a7322e4a719
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm >=6.2.0
     - pip
   run:
+    - typing_extensions
     - python >=3.8,<3.12
     - boto3 >=1.34.0
     - botocore >=1.28.16
